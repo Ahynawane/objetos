@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos 5</title>
+</head>
+<body>
+    <script>
+        let produto = {
+            resultado:0,
+            q1:1,
+            q2:2,
+            q3:3,
+            retorne:function(){
+                this.reultado = (this.q1 + this.q2 + this.q3)
+                document.write(this.reultado)
+            }
+        }
+        produto.retorne()
+    </script>
+</body>
+</html>

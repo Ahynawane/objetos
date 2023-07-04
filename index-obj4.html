@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos 4</title>
+</head>
+<body>
+    <script>
+        let produto = {
+            nome: "blabla", 
+            quantidade: 5,
+            entrada:function(vale){
+                this.quantidade = vale - this.quantidade
+                document.write(this.quantidade)
+                
+            },
+        
+        }
+       
+        produto.entrada(10)
+    </script>
+</body>
+</html>

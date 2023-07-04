@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos 8</title>
+</head>
+<body>
+    <script>
+        let obj1 = {
+            nome: "receita 1", 
+            ingre:["arroz", "café"], 
+            tempo: 5,
+
+        }
+        let obj2 = {
+            nome: "receita 2", 
+            ingre:["pão", "manteiga"], 
+            tempo: 2,
+
+        }
+        let obj3 = {
+            nome: "receita 3", 
+            ingre:["macarrão", "tomate"], 
+            tempo: 9,
+
+        }
+
+        let receitas = [obj1, obj2, obj3]
+        for (i=0; i<receitas.length; i++){
+            let receita = receitas[i]
+            document.write("nome: ", receita.nome, "<br> ingredientes: ", receita.ingre, "<br> tempo de preparo: ", receita.tempo, "<br>")
+        }
+    </script>
+</body>
+</html>

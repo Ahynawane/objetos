@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos 3</title>
+</head>
+<body>
+    <script>
+
+        
+let produto = {
+            nome: "dove",
+            quantidade: 5,
+            entrada: function (valor) {
+                this.quantidade = this.quantidade + valor
+                document.write(`${this.quantidade}`)
+            }
+        }
+
+        let valor = Number(prompt("insira um valor"))
+        produto.entrada(valor)
+    </script>
+</body>
+</html>
